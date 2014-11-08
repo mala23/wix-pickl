@@ -1,8 +1,17 @@
 require 'sinatra/base'
+require 'sinatra/base'
+require 'haml'
 
 class PickL < Sinatra::Base
+
+  set :partial_template_engine, :haml
+
   get '/' do
-    'Hello PickL!'
+    redirect to('/widget')
+  end
+
+  get '/widget' do
+    haml :widget
   end
 
   # start the server if ruby file executed directly
