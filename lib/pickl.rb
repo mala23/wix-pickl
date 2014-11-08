@@ -14,6 +14,10 @@ class PickL < Sinatra::Base
     haml :widget
   end
 
+  get '/settings' do
+    haml :settings
+  end
+
   # start the server if ruby file executed directly
   run! if app_file == $0
 end
