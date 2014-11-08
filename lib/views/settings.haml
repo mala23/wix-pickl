@@ -1,3 +1,12 @@
 %head
+  %header 
+    %h1 PickL - pick and listen
 %main
   %p Settings
+  %form{:method => "post", :action => "/snippet"}
+    %input#snippet{:type => "text", :name => "snippet", :placeholder => "Paste your embed code here..."}
+    %button#embed{:type => "submit", :value => "Embed"}
+
+%footer
+  %details
+    %a PickL - pick and listen

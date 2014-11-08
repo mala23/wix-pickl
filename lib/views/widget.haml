@@ -1,2 +1,6 @@
 %header
 %main
+  - if @snippet
+    = @snippet
+  - else
+    %p There is no Cloudcast embedded in this widget yet. Paste the code in your widget settings.

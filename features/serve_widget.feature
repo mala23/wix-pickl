@@ -5,4 +5,4 @@ Feature: PickL serves the widget
 
     Scenario: PickL serves the widget
       Given I am on the "/widget" page
-      Then I should see "PickL"
+      Then I should see "There is no Cloudcast"
